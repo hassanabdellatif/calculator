@@ -22,10 +22,8 @@ class Calculator extends StatefulWidget {
 class _Calculator extends State<Calculator> {
   var num1 = 0, num2 = 0, result = 0;
 
-  final TextEditingController num1Controller =
-      TextEditingController(text: "0");
-  final TextEditingController num2Controller =
-      TextEditingController(text: "0");
+  final TextEditingController num1Controller = TextEditingController(text: "0");
+  final TextEditingController num2Controller = TextEditingController(text: "0");
 
   @override
   void dispose() {
@@ -44,31 +42,25 @@ class _Calculator extends State<Calculator> {
 
   void subtraction() {
     setState(() {
-      setState(() {
-        num1 = int.parse(num1Controller.text);
-        num2 = int.parse(num2Controller.text);
-        result = num1 - num2;
-      });
+      num1 = int.parse(num1Controller.text);
+      num2 = int.parse(num2Controller.text);
+      result = num1 - num2;
     });
   }
 
   void multiplication() {
     setState(() {
-      setState(() {
-        num1 = int.parse(num1Controller.text);
-        num2 = int.parse(num2Controller.text);
-        result = num1 * num2;
-      });
+      num1 = int.parse(num1Controller.text);
+      num2 = int.parse(num2Controller.text);
+      result = num1 * num2;
     });
   }
 
   void division() {
     setState(() {
-      setState(() {
-        num1 = int.parse(num1Controller.text);
-        num2 = int.parse(num2Controller.text);
-        result = num1 ~/ num2;
-      });
+      num1 = int.parse(num1Controller.text);
+      num2 = int.parse(num2Controller.text);
+      result = num1 ~/ num2;
     });
   }
 
